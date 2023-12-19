@@ -5,3 +5,6 @@ local opts = { noremap = true, silent = true }
 local keymap = vim.api.nvim_set_keymap
 keymap("i", "jk", "<ESC>", opts)
 keymap("n", "<F5>", ":LocalHistoryToggle<CR>", opts)
+
+keymap("n", "<leader>dk", ":DapContinue<CR>", opts)
+keymap("n", "<leader>db", ":DapToggleBreakpoint<CR>", opts)
